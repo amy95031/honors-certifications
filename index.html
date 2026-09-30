@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Honors &amp; Certifications · Chia-Yu (Millie) Liu</title>
+<meta name="description" content="Awards, scholarships and certifications of Chia-Yu (Millie) Liu, with certificates." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #0c1417;
+    --bg-2: #121d21;
+    --card: #16242a;
+    --line: #25383f;
+    --text: #e8f1f2;
+    --muted: #93a8ad;
+    --accent: #3fb6c4;
+    --accent-2: #f2a65a;
+    --shadow: 0 20px 50px -20px rgba(0, 0, 0, .7);
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #f5f8f8; --bg-2: #eaf1f2; --card: #ffffff; --line: #d6e2e4;
+      --text: #10262b; --muted: #53686d; --accent: #1b8795; --accent-2: #c9702a;
+      --shadow: 0 20px 45px -25px rgba(16, 38, 43, .45);
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #f5f8f8; --bg-2: #eaf1f2; --card: #ffffff; --line: #d6e2e4;
+    --text: #10262b; --muted: #53686d; --accent: #1b8795; --accent-2: #c9702a;
+    --shadow: 0 20px 45px -25px rgba(16, 38, 43, .45);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: "Inter", system-ui, sans-serif; line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* ---------- Hero ---------- */
+  .hero { position: relative; overflow: hidden; padding: 88px 16px 56px; text-align: center; }
+  .hero::before {
+    content: ""; position: absolute; inset: -40%;
+    background:
+      radial-gradient(35% 35% at 30% 40%, color-mix(in srgb, var(--accent) 35%, transparent), transparent 70%),
+      radial-gradient(30% 30% at 70% 60%, color-mix(in srgb, var(--accent-2) 28%, transparent), transparent 70%);
+    filter: blur(40px); animation: drift 18s ease-in-out infinite alternate; z-index: 0;
+  }
+  @keyframes drift { to { transform: translate(6%, -4%) rotate(8deg); } }
+  .hero > * { position: relative; z-index: 1; }
+  .eyebrow { letter-spacing: .18em; text-transform: uppercase; font-size: 12px; color: var(--accent); font-weight: 600; }
+  h1 { font-family: "Fraunces", Georgia, serif; font-size: clamp(34px, 6vw, 60px); line-height: 1.08; margin: 12px auto 16px; max-width: 900px; }
+  .lede { color: var(--muted); max-width: 640px; margin: 0 auto; font-size: 17px; }
+  .stats { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 28px; }
+  .stat { background: color-mix(in srgb, var(--card) 80%, transparent); border: 1px solid var(--line); border-radius: 14px; padding: 12px 18px; min-width: 120px; backdrop-filter: blur(6px); }
+  .stat b { display: block; font-size: 24px; font-family: "Fraunces", serif; }
+  .stat span { font-size: 12px; color: var(--muted); }
+
+  /* ---------- Controls ---------- */
+  .controls { position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--bg) 85%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+  .controls-inner { max-width: 1180px; margin: 0 auto; padding: 12px 16px; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .chip { border: 1px solid var(--line); background: var(--card); color: var(--text); border-radius: 999px; padding: 7px 14px; font: 500 13px "Inter", sans-serif; cursor: pointer; transition: all .2s; }
+  .chip:hover { border-color: var(--accent); }
+  .chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .theme { margin-left: auto; }
+
+  /* ---------- Grid ---------- */
+  main { max-width: 1180px; margin: 0 auto; padding: 32px 16px 80px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 18px; overflow: hidden;
+    box-shadow: var(--shadow); cursor: zoom-in; transform-style: preserve-3d;
+    transition: transform .25s ease, box-shadow .25s ease, opacity .5s ease;
+    opacity: 0; transform: translateY(24px);
+  }
+  .card.in { opacity: 1; transform: none; }
+  .card.hidden { display: none; }
+  .card:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  .thumb { position: relative; aspect-ratio: 3 / 4; overflow: hidden; background: var(--bg-2); }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform .6s ease; }
+  .card:hover .thumb img { transform: scale(1.06); }
+  .thumb .shine { position: absolute; inset: 0; background: linear-gradient(115deg, transparent 30%, rgba(255,255,255,.18) 50%, transparent 70%); transform: translateX(-100%); transition: transform .8s ease; }
+  .card:hover .shine { transform: translateX(100%); }
+  .badge { position: absolute; top: 12px; left: 12px; background: rgba(12, 20, 23, .78); color: #fff; font-size: 11px; font-weight: 600; letter-spacing: .06em; padding: 5px 10px; border-radius: 999px; backdrop-filter: blur(4px); }
+  .card.talk .thumb { aspect-ratio: 4 / 3; }
+  .card.talk .thumb img { object-fit: contain; object-position: center; background: #fff; padding: 10px; }
+  .badge.deck { left: auto; right: 12px; background: var(--accent); }
+  .strip { position: absolute; bottom: 38px; left: 50%; transform: translateX(-50%); display: none; gap: 6px; max-width: 92%; overflow-x: auto; padding: 6px; background: rgba(0,0,0,.45); border-radius: 10px; }
+  .strip.on { display: flex; }
+  .stage.deck #lb-img { max-height: calc(92vh - 110px); margin-bottom: 84px; }
+  @media (max-width: 820px) { .stage.deck #lb-img { max-height: calc(58vh - 90px); margin-bottom: 70px; } }
+  .strip img { width: 72px; height: 40px; object-fit: cover; border-radius: 4px; opacity: .5; cursor: pointer; border: 2px solid transparent; box-shadow: none; max-width: none; max-height: none; transition: opacity .2s; }
+  .strip img.cur { opacity: 1; border-color: var(--accent); }
+  .badge.soon { left: auto; right: 12px; background: var(--accent-2); }
+  .body { padding: 16px 18px 18px; }
+  .meta { font-size: 12px; color: var(--accent-2); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
+  .card h3 { font-size: 16px; line-height: 1.35; margin: 6px 0 8px; }
+  .card p { font-size: 13.5px; color: var(--muted); margin: 0 0 12px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag { font-size: 11px; color: var(--accent); border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent); border-radius: 999px; padding: 2px 9px; }
+
+  /* ---------- Lightbox ---------- */
+  .lb { position: fixed; inset: 0; z-index: 20; display: none; background: rgba(5, 9, 11, .94); }
+  .lb.open { display: grid; grid-template-columns: 1fr minmax(260px, 340px); animation: fade .25s ease; }
+  @keyframes fade { from { opacity: 0; } }
+  .stage { position: relative; overflow: hidden; display: grid; place-items: center; cursor: zoom-in; }
+  .stage.zoomed { cursor: zoom-out; }
+  .stage img { max-width: 94%; max-height: 92vh; box-shadow: 0 30px 80px rgba(0,0,0,.6); border-radius: 6px; transition: transform .3s ease; transform-origin: center; user-select: none; }
+  .info { background: #0f1a1e; color: #e8f1f2; padding: 28px 24px; overflow-y: auto; border-left: 1px solid #22343a; }
+  .info h2 { font-family: "Fraunces", serif; font-size: 22px; line-height: 1.25; margin: 8px 0 12px; }
+  .info .authors { font-size: 13px; color: #a9bcc0; margin-bottom: 14px; }
+  .info .summary { font-size: 14px; color: #cfdcde; }
+  .info .actions { margin-top: 18px; display: flex; gap: 10px; flex-wrap: wrap; }
+  .btn { border: 1px solid #2d464d; color: #e8f1f2; background: #16252a; border-radius: 10px; padding: 8px 12px; font: 500 13px "Inter", sans-serif; cursor: pointer; }
+  .btn:hover { border-color: var(--accent); text-decoration: none; }
+  .nav { position: absolute; top: 50%; transform: translateY(-50%); width: 46px; height: 46px; border-radius: 50%; border: none; background: rgba(255,255,255,.1); color: #fff; font-size: 22px; cursor: pointer; }
+  .nav:hover { background: rgba(255,255,255,.2); }
+  .prev { left: 16px; } .next { right: 16px; }
+  .close { position: absolute; top: 14px; right: 14px; z-index: 2; }
+  .counter { position: absolute; bottom: 14px; left: 50%; transform: translateX(-50%); color: #a9bcc0; font-size: 12px; }
+
+  footer { text-align: center; color: var(--muted); font-size: 13px; padding: 0 16px 48px; }
+
+  @media (max-width: 820px) {
+    .lb.open { grid-template-columns: 1fr; grid-template-rows: 62vh auto; }
+    .info { border-left: none; border-top: 1px solid #22343a; }
+    .stage img { max-height: 58vh; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before { animation: none !important; transition: none !important; }
+    .card { opacity: 1; transform: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="eyebrow">Honors &amp; certifications</div>
+  <h1>Recognition along the way</h1>
+  <p class="lede">Awards, scholarships and professional certifications of <a href="https://github.com/amy95031">Chia-Yu (Millie) Liu</a>, each shown with its certificate or evidence.</p>
+  <div class="stats">
+    <div class="stat"><b>4</b><span>awards</span></div>
+    <div class="stat"><b>2</b><span>government scholarships</span></div>
+    <div class="stat"><b>5</b><span>certifications</span></div>
+  </div>
+</header>
+
+<nav class="controls" aria-label="Filter items">
+  <div class="controls-inner" id="filters">
+    <button class="chip theme" id="theme" type="button" aria-label="Toggle colour theme">◐ Theme</button>
+  </div>
+</nav>
+
+<main>
+  <div class="grid" id="grid"></div>
+</main>
+
+<footer>
+  Click any item to see the certificate · ← → to browse · click the image to zoom<br />
+  © Chia-Yu Liu · <a href="https://orcid.org/0000-0002-3017-9916">ORCID</a> · <a href="https://amy95031.github.io/conference-posters/">Posters &amp; talks</a> · <a href="https://github.com/amy95031/honors-certifications">Source</a>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Certificate viewer">
+  <div class="stage" id="stage">
+    <img id="lb-img" alt="" />
+    <button class="nav prev" id="prev" aria-label="Previous poster">‹</button>
+    <button class="nav next" id="next" aria-label="Next poster">›</button>
+    <div class="strip" id="strip"></div>
+    <div class="counter" id="counter"></div>
+  </div>
+  <aside class="info">
+    <button class="btn close" id="close" aria-label="Close">✕</button>
+    <div class="meta" id="lb-meta"></div>
+    <h2 id="lb-title"></h2>
+    <div class="authors" id="lb-authors"></div>
+    <div class="summary" id="lb-summary"></div>
+    <div class="tags" id="lb-tags" style="margin-top:14px"></div>
+    <div class="actions"><a class="btn" id="lb-open" target="_blank" rel="noopener">Open full size ↗</a></div>
+  </aside>
+</div>
+
+<script>
+const POSTERS = [
+  {
+    id: "ucla-bme-quantum-2026",
+    title: "Biomedical Engineering × Quantum Science Elite Program: Certificate of Completion",
+    authors: "Ministry of Education (Youth Development Administration) · Asia University · Taiwanese American Industrial Technology Association",
+    meeting: "2026", place: "UCLA, Los Angeles", type: "Award · Full scholarship",
+    topics: ["Awards", "Scholarships"],
+    summary: "Selected for a fully funded 60-day interdisciplinary research delegation at UCLA (6 July to 3 September 2026). The certificate recognises outstanding performance across biomedical engineering, artificial intelligence, and quantum science."
+  },
+  {
+    id: "gemini-certified-educator-2025",
+    title: "Gemini Certified Educator",
+    authors: "Google for Education",
+    meeting: "2025", place: "Online", type: "Certification · valid through 2028",
+    topics: ["Certifications"],
+    summary: "Certified for the knowledge, skills, and basic competencies needed to use Google AI in education."
+  },
+  {
+    id: "harvard-autistic-adults-2025",
+    title: "Clinical Care for Autistic Adults",
+    authors: "Harvard Medical School, Postgraduate Medical Education",
+    meeting: "2025", place: "Online", type: "Certification · 6.25 AMA PRA Category 1 Credits™",
+    topics: ["Certifications"],
+    summary: "Completed Harvard Medical School's continuing medical education course on clinical care for autistic adults (March 2025)."
+  },
+  {
+    id: "jhu-fellows-2024",
+    title: "Fellows Program in Aging, Hearing and Public Health",
+    authors: "Johns Hopkins Cochlear Center for Hearing and Public Health",
+    meeting: "2024", place: "Johns Hopkins Bloomberg School of Public Health", type: "Certification",
+    topics: ["Certifications"],
+    summary: "Completed the Cochlear Center's fellows program on hearing loss, ageing, and public health (24 July 2024)."
+  },
+  {
+    id: "visp-uw-madison-2024",
+    title: "Visiting International Student Program (VISP)",
+    authors: "University of Wisconsin–Madison",
+    meeting: "2023–24", place: "Madison, Wisconsin, USA", type: "Certification · academic year",
+    topics: ["Certifications"],
+    summary: "Full academic year as a visiting international student in Communication Sciences and Disorders at UW–Madison, funded by the Ministry of Education scholarship below."
+  },
+  {
+    id: "moe-scholarship-2023",
+    title: "Ministry of Education Taiwan Scholarship: Study Abroad Programme for Future Scholars in the Humanities and Social Sciences",
+    authors: "Ministry of Education, Taiwan · Institute of Sociology, Academia Sinica",
+    meeting: "2023", place: "Taiwan", type: "Scholarship · ≈ US$35,000",
+    topics: ["Awards", "Scholarships"],
+    summary: "Competitive government scholarship covering full tuition, a monthly stipend, and airfare for a year of study at the University of Wisconsin–Madison."
+  },
+  {
+    id: "moca-certified-rater",
+    title: "MoCA Certified Rater",
+    authors: "Montreal Cognitive Assessment (MoCA)",
+    meeting: "MoCA", place: "Online", type: "Certification",
+    topics: ["Certifications"],
+    summary: "Certified to administer and score the Montreal Cognitive Assessment, a widely used screening test for mild cognitive impairment and dementia. (Rater ID removed from the image.)"
+  },
+  {
+    id: "sign-song-champion-2019",
+    title: "National Champion (Group): 13th Guashan Cup National Sign Language Song Competition",
+    authors: "Performance: 「Ladies Night」",
+    meeting: "2019", place: "Taichung, Taiwan", type: "Award · video evidence",
+    topics: ["Awards"], link: "https://youtu.be/mGryUhB7olE", linkLabel: "Watch the winning performance ↗",
+    summary: "First place in the group category of a national Taiwanese Sign Language song competition. The linked video records the winning performance."
+  },
+  {
+    id: "kanagawa-best-oral-2017",
+    title: "Outstanding Oral Presentation Award, Kanagawa International Science Forum",
+    authors: "Chao-chi Chen, Chia-yu Liu, Fang-cheng Chang · National Experimental High School at Central Taiwan Science Park",
+    meeting: "2017", place: "Kanagawa, Japan", type: "Award",
+    topics: ["Awards"],
+    summary: "Best presentation award for the project “Novelty Bio-hydrogen Production by Using Immobilized Cells Made of Bacterial Cellulose”, presented at an international high-school science forum in Japan."
+  }
+];
+
+const grid = document.getElementById("grid");
+const filters = document.getElementById("filters");
+const themeBtn = document.getElementById("theme");
+let active = "All";
+let visible = POSTERS.slice();
+let current = 0;
+
+/* Filters */
+const topics = ["All", "Awards", "Scholarships", "Certifications"];
+topics.forEach(t => {
+  const b = document.createElement("button");
+  b.className = "chip"; b.type = "button"; b.textContent = t;
+  b.setAttribute("aria-pressed", t === "All");
+  b.onclick = () => { active = t; applyFilter(); };
+  filters.insertBefore(b, themeBtn);
+});
+
+/* Cards */
+POSTERS.forEach((p, i) => {
+  const c = document.createElement("article");
+  c.className = "card talk"; c.tabIndex = 0; c.dataset.id = p.id;
+  c.innerHTML = `
+    <div class="thumb">
+      <img src="thumbs/${p.id}.jpg" alt="${p.title}" loading="lazy" />
+      <div class="shine"></div>
+      <span class="badge">${p.meeting}</span>${p.upcoming ? '<span class="badge soon">Upcoming</span>' : ""}${p.slides ? `<span class="badge deck">▶ ${p.slides} slides</span>` : ""}
+    </div>
+    <div class="body">
+      <div class="meta">${p.type} · ${p.place}</div>
+      <h3>${p.title}</h3>
+      <p>${p.summary.split(". ")[0]}.</p>
+      <div class="tags">${p.topics.map(t => `<span class="tag">${t}</span>`).join("")}</div>
+    </div>`;
+  c.onclick = () => openLb(p.id);
+  c.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openLb(p.id); } };
+  /* subtle 3D tilt */
+  c.onmousemove = e => {
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const r = c.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+    c.style.transform = `perspective(900px) rotateY(${x * 6}deg) rotateX(${-y * 6}deg) translateY(-4px)`;
+  };
+  c.onmouseleave = () => { c.style.transform = ""; };
+  if (p.slides) {
+    const im = c.querySelector(".thumb img"); let t = null, k = 1;
+    c.addEventListener("mouseenter", () => { t = setInterval(() => { k = k % p.slides + 1; im.src = slideSrc(p, k); }, 900); });
+    c.addEventListener("mouseleave", () => { clearInterval(t); k = 1; im.src = `thumbs/${p.id}.jpg`; });
+  }
+  grid.appendChild(c);
+});
+
+/* Entrance animation */
+const io = new IntersectionObserver(es => es.forEach((e, k) => {
+  if (e.isIntersecting) { setTimeout(() => e.target.classList.add("in"), k * 90); io.unobserve(e.target); }
+}), { threshold: .12 });
+document.querySelectorAll(".card").forEach(c => io.observe(c));
+
+function applyFilter() {
+  visible = POSTERS.filter(p => active === "All" || (active === "Upcoming" ? p.upcoming : p.topics.includes(active)));
+  document.querySelectorAll(".chip:not(.theme)").forEach(b => b.setAttribute("aria-pressed", b.textContent === active));
+  document.querySelectorAll(".card").forEach(c => {
+    const show = visible.some(p => p.id === c.dataset.id);
+    c.classList.toggle("hidden", !show);
+    if (show) c.classList.add("in");
+  });
+}
+
+/* Lightbox */
+const lb = document.getElementById("lb"), stage = document.getElementById("stage"), img = document.getElementById("lb-img");
+function openLb(id) {
+  current = visible.findIndex(p => p.id === id);
+  slide = 1;
+  render(); lb.classList.add("open"); document.body.style.overflow = "hidden";
+  document.getElementById("close").focus();
+}
+function closeLb() { lb.classList.remove("open"); unzoom(); document.body.style.overflow = ""; }
+let slide = 1;
+function slideSrc(p, k) { return `talks/${p.id}/${String(k).padStart(2, "0")}.jpg`; }
+function render() {
+  const p = visible[current];
+  unzoom();
+  img.src = `certs/${p.id}.jpg`; img.alt = p.title;
+  document.getElementById("lb-meta").textContent = `${p.type} · ${p.meeting} · ${p.place}`;
+  document.getElementById("lb-title").textContent = p.title;
+  document.getElementById("lb-authors").textContent = p.authors;
+  document.getElementById("lb-summary").textContent = p.summary;
+  document.getElementById("lb-tags").innerHTML = p.topics.map(t => `<span class="tag">${t}</span>`).join("");
+  document.getElementById("lb-open").href = p.link || `certs/${p.id}.jpg`;
+  document.getElementById("lb-open").textContent = p.linkLabel || "Open full size ↗";
+  document.getElementById("counter").textContent = p.slides
+    ? `Slide ${slide} / ${p.slides}  ·  item ${current + 1} / ${visible.length}`
+    : `${current + 1} / ${visible.length}`;
+  const strip = document.getElementById("strip");
+  strip.classList.toggle("on", !!p.slides);
+  stage.classList.toggle("deck", !!p.slides);
+  if (p.slides) {
+    if (strip.dataset.id !== p.id) {
+      strip.innerHTML = Array.from({ length: p.slides }, (_, i) => `<img src="${slideSrc(p, i + 1)}" alt="Slide ${i + 1}" data-k="${i + 1}" />`).join("");
+      strip.dataset.id = p.id;
+      strip.querySelectorAll("img").forEach(t => t.onclick = e => { e.stopPropagation(); slide = +t.dataset.k; render(); });
+    }
+    strip.querySelectorAll("img").forEach(t => t.classList.toggle("cur", +t.dataset.k === slide));
+    strip.querySelector(".cur")?.scrollIntoView({ inline: "center", block: "nearest" });
+  }
+}
+function step(d) {
+  const p = visible[current];
+  if (p.slides && slide + d >= 1 && slide + d <= p.slides) { slide += d; render(); return; }
+  current = (current + d + visible.length) % visible.length;
+  const q = visible[current]; slide = q.slides ? (d < 0 ? q.slides : 1) : 1;
+  render();
+}
+function unzoom() { stage.classList.remove("zoomed"); img.style.transform = ""; }
+img.onclick = e => {
+  e.stopPropagation();
+  if (stage.classList.toggle("zoomed")) pan(e); else img.style.transform = "";
+};
+stage.onmousemove = e => { if (stage.classList.contains("zoomed")) pan(e); };
+function pan(e) {
+  const r = stage.getBoundingClientRect();
+  const x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+  img.style.transform = `scale(2.4) translate(${-x * 60}%, ${-y * 60}%)`;
+}
+document.getElementById("prev").onclick = e => { e.stopPropagation(); step(-1); };
+document.getElementById("next").onclick = e => { e.stopPropagation(); step(1); };
+document.getElementById("close").onclick = closeLb;
+stage.addEventListener("click", e => { if (e.target === stage) closeLb(); });
+document.addEventListener("keydown", e => {
+  if (!lb.classList.contains("open")) return;
+  if (e.key === "Escape") closeLb();
+  if (e.key === "ArrowRight") step(1);
+  if (e.key === "ArrowLeft") step(-1);
+});
+let sx = null;
+stage.addEventListener("touchstart", e => { sx = e.touches[0].clientX; }, { passive: true });
+stage.addEventListener("touchend", e => {
+  if (sx === null) return; const dx = e.changedTouches[0].clientX - sx;
+  if (Math.abs(dx) > 50) step(dx < 0 ? 1 : -1); sx = null;
+});
+
+/* Theme toggle (remembered per browser) */
+try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (_) {}
+themeBtn.onclick = () => {
+  const cur = document.documentElement.dataset.theme
+    || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+  const next = cur === "light" ? "dark" : "light";
+  document.documentElement.dataset.theme = next;
+  try { localStorage.setItem("theme", next); } catch (_) {}
+};
+</script>
+</body>
+</html>
